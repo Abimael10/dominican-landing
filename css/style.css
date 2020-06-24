@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
+:root {
+    --main-bg-color: #000000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+        url("../img/beach-birds-calm-clouds-219998.jpg") center;
+    background-size: cover;
+}
+
+.navbar {
+    display: block;
+    padding: 2rem 0;
+    background: transparent !important;
+}
+
+.navbar-brand {
+    font-family: "Lobster", cursive;
+    font-size: 1.5rem;
+}
+
+.showcase-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 18vh auto;
+}
+
+.titulo {
+    color: #fff;
+    font-weight: 500;
+}
+
+.descripcion {
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.boton {
+    font-size: 1rem;
+    color: #fff;
+    background: #a87b26;
+    padding: 10px 24px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.boton:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #66440a;
+}
+
+/*ATRACCIONES*/
+
+.about {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    color: #fff;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Lobster", cursive;
+    padding-bottom: 6rem;
+}
+
+.galeria-small {
+    position: relative;
+}
+
+.galeria-small:hover .imagen:not(hover) {
+    transform: scale(.95);
+}
+
+.imagen {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+}
+
+.imagen_p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.imagen_p2 {
+    right: 0;
+    top: 2rem;
+}
+
+.imagen_p3 {
+    left: 20%;
+    top: 10rem;
+}
+
+.imagen:hover {
+    outline: 1.5rem solid #a87b26;
+    transform: scale(1.05) translateY(-.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
+    z-index: 20;
+}
+
+.news {
+    background-color: #000;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+    height: auto;
+}
+
+.carta {
+    background-color: #111;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.titulo-news {
+    font-size: 1.5rem;
+}
+
+.fas {
+    font-size: 5rem;
+    color: #fff;
+}
+
+input[type=text] {
+    display: block;
+    padding: .6rem;
+    text-align: center;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    padding: 10px 15px;
+    margin: 1rem 0;
+    background: #a87b26;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Lobster", cursive;
+    font-size: 2rem;
+}
+
+@media (max-width:812px) {
+
+    .header {
+        height: 70vh;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .showcase-content {
+        margin: 10vh auto;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .descripcion {
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .about {
+        height: 90vh;
+    }
+
+    .about-title {
+        padding-top: 0;
+    }
+
+    .about .descripcion {
+        display: none;
+    }
+
+    .news {
+        padding: 2rem;
+    }
+
+    .carta {
+        width: 100%;
+    }
+}
+
+@media (max-width:950px) {
+    .header {
+        height: 70vh;
+    }
+
+    .showcase-content {
+        margin: 10vh auto;
+    }
+
+    .about {
+        height: 100vh;
+    }
+
+    .about .descripcion {
+        display: none;
+    }
+
+    .carta {
+        width: 90%;
+    }
+}
